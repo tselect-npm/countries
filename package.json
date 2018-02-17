@@ -1,6 +1,6 @@
 {
   "name": "@bluejay/countries",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Countries related data and enums",
   "main": "index.js",
   "scripts": {
