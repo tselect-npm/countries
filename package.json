@@ -1,0 +1,34 @@
+{
+  "name": "@bluejay/countries",
+  "version": "1.0.0",
+  "description": "Countries related data and enums",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require ./test/setup.js --require ./node_modules/ts-node/register ./test/**/*.test.ts"
+  },
+  "keywords": [
+    "country",
+    "code",
+    "data"
+  ],
+  "author": "Sylvain Estevez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "4.1.1",
+    "@types/chai-subset": "1.3.1",
+    "@types/mocha": "2.2.46",
+    "@types/node": "9.3.0",
+    "chai": "4.1.2",
+    "chai-subset": "1.6.0",
+    "mocha": "5.0.0",
+    "nyc": "11.4.1",
+    "ts-node": "4.1.0",
+    "typedoc": "0.9.0"
+  },
+  "dependencies": {
+    "@bluejay/collection": "4.2.3",
+    "@types/lodash": "4.14.104",
+    "lodash": "4.17.5",
+    "typescript": "2.4.2"
+  }
+}

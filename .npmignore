@@ -1,0 +1,11 @@
+docs/
+test/
+node_modules/
+.idea/
+*.ts
+dts/
+!dts/**/*.d.ts
+tsconfig.json
+.nyc_output/
+coverage/
+examples/
