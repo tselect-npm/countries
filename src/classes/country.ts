@@ -19,6 +19,7 @@ export class Country implements ICountry {
     this.names = new Map(Lodash.toPairs(options.names)) as Map<LanguageCode, string>;
 
     if (!this.currencies.length) {
+      console.log(options);
       throw new Error(`A country requires at least one currency.`);
     }
 

@@ -35,12 +35,14 @@ languagesData.forEach(languageData => {
 
 countriesData.forEach(countryData => {
   const code: CountryCode = countryData.alpha2 as CountryCode;
-  countries.set(code, new Country({
-    code,
-    currencies: (countryData.currencies as string[]).map(currencyCode => currencies.get(currencyCode as CurrencyCode) as ICurrency),
-    languages: (countryData.languages as string[]).map(languageCode => languages.get(languageCode.toUpperCase() as LanguageCode) as ILanguage),
-    names: { [LanguageCode.ENG]: countryData.name }
-  }));
+  if (countryData.currencies.length && countryData.languages.length) {
+    countries.set(code, new Country({
+      code,
+      currencies: (countryData.currencies as string[]).map(currencyCode => currencies.get(currencyCode as CurrencyCode) as ICurrency),
+      languages: (countryData.languages as string[]).map(languageCode => languages.get(languageCode.toUpperCase() as LanguageCode) as ILanguage),
+      names: { [LanguageCode.ENG]: countryData.name }
+    }));
+  }
 });
 
 export abstract class Countries {
