@@ -178,11 +178,3 @@ export enum CurrencyCode {
   ZAR = 'ZAR',
   ZMW = 'ZMW'
 }
-
-export namespace CurrencyCode {
-  const set = new Set(Object.values(CurrencyCode));
-
-  export function has(value: any): value is CurrencyCode {
-    return set.has(value);
-  }
-}

@@ -283,11 +283,3 @@ export enum CountryCode {
   ZR = 'ZR',
   ZW = 'ZW'
 }
-
-export namespace CountryCode {
-  const set = new Set(Object.values(CountryCode));
-
-  export function has(value: any): value is CountryCode {
-    return set.has(value);
-  }
-}

@@ -15,9 +15,5 @@ CountryCode.US; // US
 CurrencyCode.USD; // USD
 LanguageCode.ENG; // ENG
 
-CountryCode.has('US'); // true
-
-
 Countries.get(CountryCode.AC).getMainCurrency().getDecimals(); // 2
-
 ```

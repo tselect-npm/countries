@@ -486,11 +486,3 @@ export enum LanguageCode {
   ZXX = 'ZXX',
   ZZA = 'ZZA'
 }
-
-export namespace LanguageCode {
-  const set = new Set(Object.values(LanguageCode));
-
-  export function has(value: any): value is LanguageCode {
-    return set.has(value);
-  }
-}

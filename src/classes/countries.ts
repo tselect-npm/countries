@@ -1,4 +1,3 @@
-import { Collection, ICollection } from '@bluejay/collection';
 import { CountryCode } from '../constants/country-code';
 import { CurrencyCode } from '../constants/currency-code';
 import { LanguageCode } from '../constants/language-code';
