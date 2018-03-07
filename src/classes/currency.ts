@@ -1,23 +1,23 @@
 import { CurrencyCode } from '../constants/currency-code';
-import { LanguageCode } from '../constants/language-code';
 import * as Lodash from 'lodash';
 import { ICurrency } from '../interfaces/currency';
+import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 
 export class Currency implements ICurrency {
   private code: CurrencyCode;
   private decimals: number;
-  private names: Map<LanguageCode, string>;
+  private names: Map<ISO6391LanguageCode, string>;
 
-  public constructor(options: { code: CurrencyCode, decimals: number, names: { [languageCode in LanguageCode]?: string } }) {
+  public constructor(options: { code: CurrencyCode, decimals: number, names: { [languageCode in ISO6391LanguageCode]?: string } }) {
     this.code = options.code;
     this.decimals = options.decimals;
-    this.names = new Map(Lodash.toPairs(options.names)) as Map<LanguageCode, string>;
+    this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
 
     if (this.decimals < 0) {
       throw new Error(`A currency decimals ust be >= 0.`);
     }
 
-    if (!this.names.get(LanguageCode.ENG)) {
+    if (!this.names.get(ISO6391LanguageCode.EN)) {
       throw new Error(`A currency requires an english name.`);
     }
   }
@@ -30,7 +30,7 @@ export class Currency implements ICurrency {
     return this.decimals;
   }
 
-  public getName(languageCode: LanguageCode): string | undefined {
+  public getName(languageCode: ISO6391LanguageCode): string | undefined {
     return this.names.get(languageCode);
   }
 }
