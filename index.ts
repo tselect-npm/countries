@@ -4,4 +4,7 @@ export { ICurrency } from './src/interfaces/currency';
 export { ILanguage } from './src/interfaces/language';
 export { CountryCode } from './src/constants/country-code';
 export { CurrencyCode } from './src/constants/currency-code';
-export { LanguageCode } from './src/constants/language-code';
+export { ISO6391LanguageCode } from './src/constants/iso-6391-language-code';
+export { ISO6392BLanguageCode } from './src/constants/iso-6392b-language-code';
+export { ISO6392TLanguageCode } from './src/constants/iso-6392t-language-code';
+export { ISO6393LanguageCode } from './src/constants/iso-6393-language-code';
