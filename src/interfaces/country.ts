@@ -2,7 +2,7 @@ import { CountryCode } from '../constants/country-code';
 import { ICurrency } from './currency';
 import { ILanguage } from './language';
 import { CurrencyCode } from '../constants/currency-code';
-import { LanguageCode } from '../constants/language-code';
+import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 
 export interface ICountry {
   getCode(): CountryCode;
@@ -11,6 +11,6 @@ export interface ICountry {
   getMainCurrency(): ICurrency;
   getMainLanguage(): ILanguage;
   hasCurrency(code: CurrencyCode): boolean;
-  hasLanguage(code: LanguageCode): boolean;
-  getName(languageCode: LanguageCode): string | undefined;
+  hasLanguage(code: ISO6391LanguageCode): boolean;
+  getName(languageCode: ISO6391LanguageCode): string | undefined;
 }
