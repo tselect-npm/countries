@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICountry | @bluejay/countries</title>
+	<title>Languages | @bluejay/countries</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="icountry.html">ICountry</a>
+					<a href="languages.html">Languages</a>
 				</li>
 			</ul>
-			<h1>Interface ICountry</h1>
+			<h1>Class Languages</h1>
 		</div>
 	</div>
 </header>
@@ -68,14 +68,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ICountry</span>
+						<span class="target">Languages</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/country.html" class="tsd-signature-type">Country</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -85,14 +79,10 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getcode" class="tsd-kind-icon">get<wbr>Code</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getcurrencies" class="tsd-kind-icon">get<wbr>Currencies</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getlanguages" class="tsd-kind-icon">get<wbr>Languages</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getmaincurrency" class="tsd-kind-icon">get<wbr>Main<wbr>Currency</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getmainlanguage" class="tsd-kind-icon">get<wbr>Main<wbr>Language</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#getname" class="tsd-kind-icon">get<wbr>Name</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#hascurrency" class="tsd-kind-icon">has<wbr>Currency</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="icountry.html#haslanguage" class="tsd-kind-icon">has<wbr>Language</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="languages.html#getbyiso6391code" class="tsd-kind-icon">get<wbr>ByISO6391<wbr>Code</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="languages.html#getbyiso6392bcode" class="tsd-kind-icon">get<wbr>ByISO6392BCode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="languages.html#getbyiso6392tcode" class="tsd-kind-icon">get<wbr>ByISO6392TCode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="languages.html#getbyiso6393code" class="tsd-kind-icon">get<wbr>ByISO6393<wbr>Code</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,151 +90,17 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getcode" class="tsd-anchor"></a>
-					<h3>get<wbr>Code</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/countrycode.html" class="tsd-signature-type">CountryCode</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getbyiso6391code" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>ByISO6391<wbr>Code</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>ByISO6391<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/iso6391languagecode.html" class="tsd-signature-type">ISO6391LanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L8">interfaces/country.ts:8</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../enums/countrycode.html" class="tsd-signature-type">CountryCode</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getcurrencies" class="tsd-anchor"></a>
-					<h3>get<wbr>Currencies</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Currencies<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="icurrency.html" class="tsd-signature-type">ICurrency</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L9">interfaces/country.ts:9</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="icurrency.html" class="tsd-signature-type">ICurrency</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getlanguages" class="tsd-anchor"></a>
-					<h3>get<wbr>Languages</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Languages<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ilanguage.html" class="tsd-signature-type">ILanguage</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L10">interfaces/country.ts:10</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="ilanguage.html" class="tsd-signature-type">ILanguage</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getmaincurrency" class="tsd-anchor"></a>
-					<h3>get<wbr>Main<wbr>Currency</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Main<wbr>Currency<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="icurrency.html" class="tsd-signature-type">ICurrency</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L11">interfaces/country.ts:11</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="icurrency.html" class="tsd-signature-type">ICurrency</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getmainlanguage" class="tsd-anchor"></a>
-					<h3>get<wbr>Main<wbr>Language</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Main<wbr>Language<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ilanguage.html" class="tsd-signature-type">ILanguage</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L12">interfaces/country.ts:12</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="ilanguage.html" class="tsd-signature-type">ILanguage</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getname" class="tsd-anchor"></a>
-					<h3>get<wbr>Name</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Name<span class="tsd-signature-symbol">(</span>languageCode<span class="tsd-signature-symbol">: </span><a href="../enums/iso6391languagecode.html" class="tsd-signature-type">ISO6391LanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L15">interfaces/country.ts:15</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>languageCode: <a href="../enums/iso6391languagecode.html" class="tsd-signature-type">ISO6391LanguageCode</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="hascurrency" class="tsd-anchor"></a>
-					<h3>has<wbr>Currency</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Currency<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/currencycode.html" class="tsd-signature-type">CurrencyCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L13">interfaces/country.ts:13</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>code: <a href="../enums/currencycode.html" class="tsd-signature-type">CurrencyCode</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="haslanguage" class="tsd-anchor"></a>
-					<h3>has<wbr>Language</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Language<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/iso6391languagecode.html" class="tsd-signature-type">ISO6391LanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/interfaces/country.ts#L14">interfaces/country.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/classes/languages.ts#L38">classes/languages.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,7 +109,76 @@
 									<h5>code: <a href="../enums/iso6391languagecode.html" class="tsd-signature-type">ISO6391LanguageCode</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getbyiso6392bcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>ByISO6392BCode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>ByISO6392BCode<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/iso6392blanguagecode.html" class="tsd-signature-type">ISO6392BLanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/classes/languages.ts#L42">classes/languages.ts:42</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>code: <a href="../enums/iso6392blanguagecode.html" class="tsd-signature-type">ISO6392BLanguageCode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getbyiso6392tcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>ByISO6392TCode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>ByISO6392TCode<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/iso6392tlanguagecode.html" class="tsd-signature-type">ISO6392TLanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/classes/languages.ts#L46">classes/languages.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>code: <a href="../enums/iso6392tlanguagecode.html" class="tsd-signature-type">ISO6392TLanguageCode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getbyiso6393code" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>ByISO6393<wbr>Code</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>ByISO6393<wbr>Code<span class="tsd-signature-symbol">(</span>code<span class="tsd-signature-symbol">: </span><a href="../enums/iso6393languagecode.html" class="tsd-signature-type">ISO6393LanguageCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/countries/blob/d536fe6/src/classes/languages.ts#L50">classes/languages.ts:50</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>code: <a href="../enums/iso6393languagecode.html" class="tsd-signature-type">ISO6393LanguageCode</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/ilanguage.html" class="tsd-signature-type">ILanguage</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -288,58 +213,46 @@
 						<a href="../enums/iso6393languagecode.html" class="tsd-kind-icon">ISO6393<wbr>Language<wbr>Code</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/countries.html" class="tsd-kind-icon">Countries</a>
+						<a href="countries.html" class="tsd-kind-icon">Countries</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/country.html" class="tsd-kind-icon">Country</a>
+						<a href="country.html" class="tsd-kind-icon">Country</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/currency.html" class="tsd-kind-icon">Currency</a>
+						<a href="currency.html" class="tsd-kind-icon">Currency</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="../classes/language.html" class="tsd-kind-icon">Language</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/languages.html" class="tsd-kind-icon">Languages</a>
+						<a href="language.html" class="tsd-kind-icon">Language</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="icountry.html" class="tsd-kind-icon">ICountry</a>
+					<li class="current tsd-kind-class">
+						<a href="languages.html" class="tsd-kind-icon">Languages</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getcode" class="tsd-kind-icon">get<wbr>Code</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="languages.html#getbyiso6391code" class="tsd-kind-icon">get<wbr>ByISO6391<wbr>Code</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getcurrencies" class="tsd-kind-icon">get<wbr>Currencies</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="languages.html#getbyiso6392bcode" class="tsd-kind-icon">get<wbr>ByISO6392BCode</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getlanguages" class="tsd-kind-icon">get<wbr>Languages</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="languages.html#getbyiso6392tcode" class="tsd-kind-icon">get<wbr>ByISO6392TCode</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getmaincurrency" class="tsd-kind-icon">get<wbr>Main<wbr>Currency</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getmainlanguage" class="tsd-kind-icon">get<wbr>Main<wbr>Language</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#hascurrency" class="tsd-kind-icon">has<wbr>Currency</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="icountry.html#haslanguage" class="tsd-kind-icon">has<wbr>Language</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="languages.html#getbyiso6393code" class="tsd-kind-icon">get<wbr>ByISO6393<wbr>Code</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
-						<a href="icurrency.html" class="tsd-kind-icon">ICurrency</a>
+						<a href="../interfaces/icountry.html" class="tsd-kind-icon">ICountry</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ilanguage.html" class="tsd-kind-icon">ILanguage</a>
+						<a href="../interfaces/icurrency.html" class="tsd-kind-icon">ICurrency</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ilanguage.html" class="tsd-kind-icon">ILanguage</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="../globals.html#countries" class="tsd-kind-icon">countries</a>
