@@ -1,5 +1,9 @@
 # Countries
 
+[![npm](https://img.shields.io/npm/v/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
+ [![npm](https://img.shields.io/npm/dm/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
+[![npm](https://img.shields.io/npm/l/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
+
 Countries related, enums and data, such as currencies and languages.
 
 ## Installation
