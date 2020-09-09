@@ -13,4 +13,5 @@ export interface ICountry {
   hasCurrency(code: CurrencyCode): boolean;
   hasLanguage(code: ISO6391LanguageCode): boolean;
   getName(languageCode: ISO6391LanguageCode): string | undefined;
+  getCallingCodes(): string[];
 }

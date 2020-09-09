@@ -29,7 +29,8 @@ countriesData.forEach(countryData => {
       code,
       currencies: (countryData.currencies as string[]).map(currencyCode => currencies.get(currencyCode as CurrencyCode) as ICurrency),
       languages: (countryData.languages as string[]).map(languageCode => Languages.getByISO6393Code(languageCode.toUpperCase() as ISO6393LanguageCode)),
-      names: { [ISO6391LanguageCode.EN]: countryData.name }
+      names: { [ISO6391LanguageCode.EN]: countryData.name },
+      callingCodes: countryData.countryCallingCodes
     }));
   }
 });

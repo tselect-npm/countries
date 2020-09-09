@@ -7,19 +7,20 @@ import { ILanguage } from '../interfaces/language';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 
 export class Country implements ICountry {
-  private code: CountryCode;
-  private currencies: ICurrency[];
-  private languages: ILanguage[];
-  private names: Map<ISO6391LanguageCode, string>;
+  private readonly code: CountryCode;
+  private readonly currencies: ICurrency[];
+  private readonly languages: ILanguage[];
+  private readonly names: Map<ISO6391LanguageCode, string>;
+  private readonly callingCodes: string[];
 
-  public constructor(options: { code: CountryCode, currencies: ICurrency[], languages: ILanguage[], names: { [languageCode in ISO6391LanguageCode]?: string } }) {
+  public constructor(options: { code: CountryCode, callingCodes: string[], currencies: ICurrency[], languages: ILanguage[], names: { [languageCode in ISO6391LanguageCode]?: string } }) {
     this.code = options.code;
     this.currencies = options.currencies;
     this.languages = options.languages;
     this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
+    this.callingCodes = options.callingCodes;
 
     if (!this.currencies.length) {
-      console.log(options);
       throw new Error(`A country requires at least one currency.`);
     }
 
@@ -34,6 +35,10 @@ export class Country implements ICountry {
 
   public getCode() {
     return this.code;
+  }
+
+  public getCallingCodes(): string[] {
+    return this.callingCodes;
   }
 
   public getCurrencies(): ICurrency[] {
