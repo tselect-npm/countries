@@ -1,10 +1,10 @@
+import * as Lodash from 'lodash';
 import { CountryCode } from '../constants/country-code';
 import { CurrencyCode } from '../constants/currency-code';
-import * as Lodash from 'lodash';
+import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 import { ICountry } from '../interfaces/country';
 import { ICurrency } from '../interfaces/currency';
 import { ILanguage } from '../interfaces/language';
-import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 
 export class Country implements ICountry {
   private readonly code: CountryCode;

@@ -1,7 +1,7 @@
-import { CurrencyCode } from '../constants/currency-code';
 import * as Lodash from 'lodash';
-import { ICurrency } from '../interfaces/currency';
+import { CurrencyCode } from '../constants/currency-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
+import { ICurrency } from '../interfaces/currency';
 
 export class Currency implements ICurrency {
   private code: CurrencyCode;
