@@ -45,7 +45,7 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@bluejay/collection": "5.0.0-beta.0",
+    "@bluejay/collection": "5.0.0-beta.1",
     "lodash": "4.17.20"
   }
 }
