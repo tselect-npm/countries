@@ -1,8 +1,8 @@
 import { CountryCode } from '../constants/country-code';
-import { ICurrency } from './currency';
-import { ILanguage } from './language';
 import { CurrencyCode } from '../constants/currency-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
+import { ICurrency } from './currency';
+import { ILanguage } from './language';
 
 export interface ICountry {
   getCode(): CountryCode;

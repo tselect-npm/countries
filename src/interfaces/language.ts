@@ -1,6 +1,6 @@
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
-import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
 import { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
+import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
 import { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
 
 export interface ILanguage {

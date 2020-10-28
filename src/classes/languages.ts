@@ -1,9 +1,9 @@
-import { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
-import { ILanguage } from '../interfaces/language';
-import { languagesData } from '../data/languages';
 import { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
 import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
+import { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
+import { languagesData } from '../data/languages';
+import { ILanguage } from '../interfaces/language';
 import { Language } from './language';
 
 const languagesByISO6391Code: Map<ISO6391LanguageCode, ILanguage> = new Map();

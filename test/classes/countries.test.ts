@@ -1,3 +1,4 @@
+import { expect } from 'chai';
 import { Countries } from '../../src/classes/countries';
 import { CountryCode } from '../../src/constants/country-code';
 import { Country } from '../../src/classes/country';
