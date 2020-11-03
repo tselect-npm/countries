@@ -37,6 +37,12 @@ countriesData.forEach(countryData => {
 
 export abstract class Countries {
   public static get(countryCode: CountryCode): ICountry {
-    return countries.get(countryCode) as ICountry;
+    const country = countries.get(countryCode);
+
+    if (!country) {
+      throw new Error(`No data for country code ${countryCode}.`);
+    }
+
+    return country as ICountry;
   }
 }

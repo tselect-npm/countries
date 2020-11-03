@@ -1720,6 +1720,23 @@ export const countriesData = [
     'status': 'assigned'
   },
   {
+    'alpha2': 'MQ',
+    'alpha3': 'MTQ',
+    'countryCallingCodes': [
+      '+596'
+    ],
+    'currencies': [
+      'EUR'
+    ],
+    'emoji': '🇬🇵',
+    'ioc': '',
+    'languages': [
+      'fra'
+    ],
+    'name': 'Martinique',
+    'status': 'assigned'
+  },
+  {
     'alpha2': 'GQ',
     'alpha3': 'GNQ',
     'countryCallingCodes': [
