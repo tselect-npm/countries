@@ -1,4 +1,5 @@
 export { Countries } from './classes/countries';
+export { Currencies } from './classes/currencies';
 export { ICountry } from './interfaces/country';
 export { ICurrency } from './interfaces/currency';
 export { ILanguage } from './interfaces/language';

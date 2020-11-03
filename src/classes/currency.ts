@@ -14,7 +14,7 @@ export class Currency implements ICurrency {
     this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
 
     if (this.decimals < 0) {
-      throw new Error(`A currency decimals ust be >= 0.`);
+      throw new Error(`A currency decimals must be >= 0.`);
     }
 
     if (!this.names.get(ISO6391LanguageCode.EN)) {
