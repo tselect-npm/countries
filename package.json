@@ -46,6 +46,6 @@
   },
   "dependencies": {
     "@bluejay/collection": "5.0.0-beta.2",
-    "lodash": "4.17.20"
+    "lodash": "4.17.21"
   }
 }
