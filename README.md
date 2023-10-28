@@ -1,19 +1,19 @@
 # Countries
 
-[![npm](https://img.shields.io/npm/v/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
- [![npm](https://img.shields.io/npm/dm/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
-[![npm](https://img.shields.io/npm/l/@bluejay/countries.svg?style=flat-square)](https://www.npmjs.com/package/@bluejay/countries)
+[![npm](https://img.shields.io/npm/v/@tselect/countries.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/countries)
+ [![npm](https://img.shields.io/npm/dm/@tselect/countries.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/countries)
+[![npm](https://img.shields.io/npm/l/@tselect/countries.svg?style=flat-square)](https://www.npmjs.com/package/@tselect/countries)
 
 Countries related, enums and data, such as currencies and languages.
 
 ## Installation
 
-`npm i @bluejay/countries`
+`npm i @tselect/countries`
 
 ## Basic usage
 
 ```typescript
-import { CountryCode, Countries, CurrencyCode, ISO6391LanguageCode } from '@bluejay/countries';
+import { CountryCode, Countries, CurrencyCode, ISO6391LanguageCode } from '@tselect/countries';
 
 CountryCode.US; // US
 CurrencyCode.USD; // USD
