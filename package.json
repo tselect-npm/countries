@@ -50,5 +50,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "packageManager": "pnpm@11.21.0"
 }
