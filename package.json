@@ -1,14 +1,22 @@
 {
   "name": "@tselect/countries",
   "version": "1.0.0",
-  "description": "Countries related data and enums.",
+  "description": "Country, currency and language codes as TypeScript enums, with the data behind them.",
   "keywords": [
     "tselect",
     "country",
-    "code",
+    "countries",
+    "country-codes",
+    "currency",
+    "language",
+    "iso-3166",
+    "iso-4217",
+    "iso-639",
+    "calling-codes",
     "data",
+    "enum",
     "typescript",
-    "enum"
+    "esm"
   ],
   "type": "module",
   "main": "./dist/index.cjs",
