@@ -1,51 +1,76 @@
 {
   "name": "@tselect/countries",
   "version": "1.0.0",
-  "description": "Countries related data and enums.",
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "description": "Country, currency and language codes as TypeScript enums, with the data behind them.",
+  "keywords": [
+    "tselect",
+    "country",
+    "countries",
+    "country-codes",
+    "currency",
+    "language",
+    "iso-3166",
+    "iso-4217",
+    "iso-639",
+    "calling-codes",
+    "data",
+    "enum",
+    "typescript",
+    "esm"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "mocha --r ts-node/register -r test/setup.ts --recursive test/**/*.test.ts",
-    "cov": "nyc npm test",
-    "lint": "tslint --project ./",
-    "fix": "tslint --fix --project ./",
-    "compile": "tsc",
-    "build": "rm -rf dist && mkdir dist && tsc --noEmit false",
-    "prepare": "tsc",
-    "prepublishOnly": "npm run lint && npm run cov && npm run build"
+    "test": "vitest run",
+    "cov": "vitest run --coverage",
+    "lint": "biome check .",
+    "typecheck": "tsc --noEmit",
+    "build": "tsdown",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm cov && pnpm build",
+    "test:watch": "vitest",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tselect-npm/countries.git"
   },
+  "author": "Sylvain Estevez",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.21.0",
   "bugs": {
     "url": "https://github.com/tselect-npm/countries/issues"
   },
   "homepage": "https://github.com/tselect-npm/countries#readme",
-  "keywords": [
-    "tselect",
-    "country",
-    "code",
-    "data",
-    "typescript",
-    "enum"
-  ],
-  "author": "Sylvain Estevez",
-  "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.3.9",
-    "@types/lodash": "^4.14.200",
-    "@types/mocha": "5.2.3",
-    "@types/node": "12.7.0",
-    "chai": "^4.3.10",
-    "mocha": "^10.2.0",
-    "nyc": "15.1.0",
-    "ts-node": "^9.1.1",
+    "@biomejs/biome": "^2.5.11",
+    "@types/node": "22.20.1",
+    "@vitest/coverage-v8": "^4.1.11",
+    "tsdown": "^0.22.14",
     "tslint": "6.1.3",
-    "typedoc": "^0.25.2",
-    "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
   }
 }

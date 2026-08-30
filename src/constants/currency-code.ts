@@ -176,5 +176,5 @@ export enum CurrencyCode {
   XXX = 'XXX',
   YER = 'YER',
   ZAR = 'ZAR',
-  ZMW = 'ZMW'
+  ZMW = 'ZMW',
 }

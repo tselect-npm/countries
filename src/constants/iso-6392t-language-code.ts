@@ -183,5 +183,5 @@ export enum ISO6392TLanguageCode {
   YID = 'yid',
   YOR = 'yor',
   ZHA = 'zha',
-  ZUL = 'zul'
+  ZUL = 'zul',
 }

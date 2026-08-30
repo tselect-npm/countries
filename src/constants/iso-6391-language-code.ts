@@ -183,5 +183,5 @@ export enum ISO6391LanguageCode {
   YI = 'yi',
   YO = 'yo',
   ZA = 'za',
-  ZU = 'zu'
+  ZU = 'zu',
 }
