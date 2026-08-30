@@ -51,12 +51,8 @@
     "url": "https://github.com/tselect-npm/countries/issues"
   },
   "homepage": "https://github.com/tselect-npm/countries#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "@types/chai": "^4.3.9",
-    "@types/lodash": "^4.14.200",
     "@types/mocha": "5.2.3",
     "@types/node": "22.20.1",
     "chai": "^4.3.10",

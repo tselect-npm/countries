@@ -1,4 +1,3 @@
-import * as Lodash from 'lodash';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 import { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
 import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
@@ -17,7 +16,7 @@ export class Language implements ILanguage {
     this.iso6392BCode = options.iso6392BCode;
     this.iso6392TCode = options.iso6392TCode;
     this.iso6393Code = options.iso6393Code;
-    this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
+    this.names = new Map(Object.entries(options.names) as [ISO6391LanguageCode, string][]);
 
     if (!this.names.get(ISO6391LanguageCode.EN)) {
       throw new Error(`A language requires an english name.`);

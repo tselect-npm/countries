@@ -1,4 +1,3 @@
-import * as Lodash from 'lodash';
 import { CurrencyCode } from '../constants/currency-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 import { ICurrency } from '../interfaces/currency';
@@ -11,7 +10,7 @@ export class Currency implements ICurrency {
   public constructor(options: { code: CurrencyCode, decimals: number, names: { [languageCode in ISO6391LanguageCode]?: string } }) {
     this.code = options.code;
     this.decimals = options.decimals;
-    this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
+    this.names = new Map(Object.entries(options.names) as [ISO6391LanguageCode, string][]);
 
     if (this.decimals < 0) {
       throw new Error(`A currency decimals must be >= 0.`);

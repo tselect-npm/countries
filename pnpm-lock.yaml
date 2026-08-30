@@ -7,17 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
-      lodash:
-        specifier: ^4.17.21
-        version: 4.18.1
     devDependencies:
       '@types/chai':
         specifier: ^4.3.9
         version: 4.3.20
-      '@types/lodash':
-        specifier: ^4.14.200
-        version: 4.17.25
       '@types/mocha':
         specifier: 5.2.3
         version: 5.2.3
@@ -246,9 +239,6 @@ packages:
 
   '@types/chai@4.3.20':
     resolution: {integrity: sha512-/pC9HAB5I/xMlc5FP77qjCnI16ChlJfW0tGa0IUcFn38VJrTV6DeZ60NU5KZBtaOZqjdpwTWohz5HU1RrhiYxQ==}
-
-  '@types/lodash@4.17.25':
-    resolution: {integrity: sha512-+K1NIO8I+F9/wNulfVvu23QYd0Pe9/OCqRrim4NoYIf1VoEDL90Ve4ClzpyqBLc7NpGGWRvYNCKZ1BE/Jpf8dQ==}
 
   '@types/mocha@5.2.3':
     resolution: {integrity: sha512-C1wVVr7xhKu6c3Mb27dFzNYR05qvHwgtpN+JOYTGc1pKA7dCEDDYpscn7kul+bCUwa3NoGDbzI1pdznSOa397w==}
@@ -990,9 +980,6 @@ packages:
   lodash.flattendeep@4.4.0:
     resolution: {integrity: sha512-uHaJFihxmJcEX3kT4I23ABqKKalJ/zDrDg0lsFtc1h+3uw49SIJ5beyhx5ExVRti3AvKoOJngIj7xz3oylPdWQ==}
 
-  lodash@4.18.1:
-    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
-
   log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
@@ -1638,8 +1625,6 @@ snapshots:
 
   '@types/chai@4.3.20': {}
 
-  '@types/lodash@4.17.25': {}
-
   '@types/mocha@5.2.3': {}
 
   '@types/node@22.20.1':
@@ -2197,8 +2182,6 @@ snapshots:
       p-locate: 5.0.0
 
   lodash.flattendeep@4.4.0: {}
-
-  lodash@4.18.1: {}
 
   log-symbols@4.1.0:
     dependencies:

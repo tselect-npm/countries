@@ -1,4 +1,3 @@
-import * as Lodash from 'lodash';
 import { CountryCode } from '../constants/country-code';
 import { CurrencyCode } from '../constants/currency-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
@@ -17,7 +16,7 @@ export class Country implements ICountry {
     this.code = options.code;
     this.currencies = options.currencies;
     this.languages = options.languages;
-    this.names = new Map(Lodash.toPairs(options.names)) as Map<ISO6391LanguageCode, string>;
+    this.names = new Map(Object.entries(options.names) as [ISO6391LanguageCode, string][]);
     this.callingCodes = options.callingCodes;
 
     if (!this.currencies.length) {
