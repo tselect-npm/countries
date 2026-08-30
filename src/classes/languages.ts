@@ -11,11 +11,17 @@ const languagesByISO6392BCode: Map<ISO6392BLanguageCode, ILanguage> = new Map();
 const languagesByISO6392TCode: Map<ISO6392TLanguageCode, ILanguage> = new Map();
 const languagesByISO6393Code: Map<ISO6393LanguageCode, ILanguage> = new Map();
 
+// 31 of the 185 rows annotate the ISO 639-3 column with the number of individual
+// languages the macrolanguage covers — `'ara + 30'`, `'zho + 13'`, `'que + 44'` —
+// instead of carrying the bare code. Every one of them matches this suffix, and
+// every one yields a real `ISO6393LanguageCode` once it is removed.
+const MACROLANGUAGE_SUFFIX = / \+ \d+$/;
+
 languagesData.forEach(languageData => {
   const iso6391Code = languageData.iso6391 as ISO6391LanguageCode;
   const iso6392BCode = languageData.iso6392B as ISO6392BLanguageCode;
   const iso6392TCode = languageData.iso6392T as ISO6392TLanguageCode;
-  const iso6393Code = languageData.iso6393 as ISO6393LanguageCode;
+  const iso6393Code = languageData.iso6393.replace(MACROLANGUAGE_SUFFIX, '') as ISO6393LanguageCode;
 
   const language = new Language({
     iso6391Code,
@@ -28,10 +34,7 @@ languagesData.forEach(languageData => {
   languagesByISO6391Code.set(iso6391Code, language);
   languagesByISO6392BCode.set(iso6392BCode, language);
   languagesByISO6392TCode.set(iso6392TCode, language);
-
-  if (iso6393Code) {
-    languagesByISO6393Code.set(iso6393Code, language);
-  }
+  languagesByISO6393Code.set(iso6393Code, language);
 });
 
 export abstract class Languages {
