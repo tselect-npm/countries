@@ -1,5 +1,5 @@
-import { CurrencyCode } from '../constants/currency-code';
-import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
+import type { CurrencyCode } from '../constants/currency-code';
+import type { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
 
 export interface ICurrency {
   getCode(): CurrencyCode;

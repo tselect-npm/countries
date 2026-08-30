@@ -1,9 +1,9 @@
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
-import { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
-import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
-import { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
+import type { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
+import type { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
+import type { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
 import { languagesData } from '../data/languages';
-import { ILanguage } from '../interfaces/language';
+import type { ILanguage } from '../interfaces/language';
 import { Language } from './language';
 
 const languagesByISO6391Code: Map<ISO6391LanguageCode, ILanguage> = new Map();
@@ -17,7 +17,7 @@ const languagesByISO6393Code: Map<ISO6393LanguageCode, ILanguage> = new Map();
 // every one yields a real `ISO6393LanguageCode` once it is removed.
 const MACROLANGUAGE_SUFFIX = / \+ \d+$/;
 
-languagesData.forEach(languageData => {
+languagesData.forEach((languageData) => {
   const iso6391Code = languageData.iso6391 as ISO6391LanguageCode;
   const iso6392BCode = languageData.iso6392B as ISO6392BLanguageCode;
   const iso6392TCode = languageData.iso6392T as ISO6392TLanguageCode;
@@ -28,7 +28,7 @@ languagesData.forEach(languageData => {
     iso6392BCode,
     iso6392TCode,
     iso6393Code,
-    names: { [ISO6391LanguageCode.EN]: languageData.name }
+    names: { [ISO6391LanguageCode.EN]: languageData.name },
   });
 
   languagesByISO6391Code.set(iso6391Code, language);
@@ -37,6 +37,9 @@ languagesData.forEach(languageData => {
   languagesByISO6393Code.set(iso6393Code, language);
 });
 
+// The static-only shape is the published API and what the README documents; turning it
+// into a bare function would break every consumer for a stylistic preference.
+// biome-ignore lint/complexity/noStaticOnlyClass: Languages is a namespace over a fixed dataset.
 export abstract class Languages {
   public static getByISO6391Code(code: ISO6391LanguageCode): ILanguage {
     return languagesByISO6391Code.get(code) as ILanguage;

@@ -1,9 +1,9 @@
-import { CountryCode } from '../constants/country-code';
-import { CurrencyCode } from '../constants/currency-code';
+import type { CountryCode } from '../constants/country-code';
+import type { CurrencyCode } from '../constants/currency-code';
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
-import { ICountry } from '../interfaces/country';
-import { ICurrency } from '../interfaces/currency';
-import { ILanguage } from '../interfaces/language';
+import type { ICountry } from '../interfaces/country';
+import type { ICurrency } from '../interfaces/currency';
+import type { ILanguage } from '../interfaces/language';
 
 export class Country implements ICountry {
   private readonly code: CountryCode;
@@ -12,7 +12,13 @@ export class Country implements ICountry {
   private readonly names: Map<ISO6391LanguageCode, string>;
   private readonly callingCodes: string[];
 
-  public constructor(options: { code: CountryCode, callingCodes: string[], currencies: ICurrency[], languages: ILanguage[], names: { [languageCode in ISO6391LanguageCode]?: string } }) {
+  public constructor(options: {
+    code: CountryCode;
+    callingCodes: string[];
+    currencies: ICurrency[];
+    languages: ILanguage[];
+    names: { [languageCode in ISO6391LanguageCode]?: string };
+  }) {
     this.code = options.code;
     this.currencies = options.currencies;
     this.languages = options.languages;
@@ -49,11 +55,11 @@ export class Country implements ICountry {
   }
 
   public hasCurrency(code: CurrencyCode): boolean {
-    return !!this.currencies.find(currency => currency.getCode() === code);
+    return !!this.currencies.find((currency) => currency.getCode() === code);
   }
 
   public hasLanguage(code: ISO6391LanguageCode): boolean {
-    return !!this.languages.find(language => language.getISO6391Code() === code);
+    return !!this.languages.find((language) => language.getISO6391Code() === code);
   }
 
   public getMainLanguage(): ILanguage {

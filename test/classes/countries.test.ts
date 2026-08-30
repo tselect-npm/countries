@@ -36,7 +36,11 @@ describe('Countries', () => {
   // threw a TypeError reading `getISO6391Code` of undefined.
   describe('language resolution', () => {
     it('should never put undefined in a country language list', () => {
-      const broken = resolvable.filter((code) => Countries.get(code).getLanguages().some((language) => !language));
+      const broken = resolvable.filter((code) =>
+        Countries.get(code)
+          .getLanguages()
+          .some((language) => !language),
+      );
       expect(broken).toEqual([]);
     });
 

@@ -1,8 +1,8 @@
 import { ISO6391LanguageCode } from '../constants/iso-6391-language-code';
-import { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
-import { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
-import { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
-import { ILanguage } from '../interfaces/language';
+import type { ISO6392BLanguageCode } from '../constants/iso-6392b-language-code';
+import type { ISO6392TLanguageCode } from '../constants/iso-6392t-language-code';
+import type { ISO6393LanguageCode } from '../constants/iso-6393-language-code';
+import type { ILanguage } from '../interfaces/language';
 
 export class Language implements ILanguage {
   private iso6391Code: ISO6391LanguageCode;
@@ -11,7 +11,13 @@ export class Language implements ILanguage {
   private iso6393Code: ISO6393LanguageCode;
   private names: Map<ISO6391LanguageCode, string>;
 
-  public constructor(options: { iso6391Code: ISO6391LanguageCode, iso6392BCode: ISO6392BLanguageCode, iso6392TCode: ISO6392TLanguageCode, iso6393Code: ISO6393LanguageCode, names: { [languageCode in ISO6391LanguageCode]?: string } }) {
+  public constructor(options: {
+    iso6391Code: ISO6391LanguageCode;
+    iso6392BCode: ISO6392BLanguageCode;
+    iso6392TCode: ISO6392TLanguageCode;
+    iso6393Code: ISO6393LanguageCode;
+    names: { [languageCode in ISO6391LanguageCode]?: string };
+  }) {
     this.iso6391Code = options.iso6391Code;
     this.iso6392BCode = options.iso6392BCode;
     this.iso6392TCode = options.iso6392TCode;

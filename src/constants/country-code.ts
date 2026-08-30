@@ -281,5 +281,5 @@ export enum CountryCode {
   ZA = 'ZA',
   ZM = 'ZM',
   ZR = 'ZR',
-  ZW = 'ZW'
+  ZW = 'ZW',
 }
