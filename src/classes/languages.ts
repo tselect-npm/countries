@@ -12,10 +12,10 @@ const languagesByISO6392TCode: Map<ISO6392TLanguageCode, ILanguage> = new Map();
 const languagesByISO6393Code: Map<ISO6393LanguageCode, ILanguage> = new Map();
 
 languagesData.forEach(languageData => {
-  const iso6391Code: ISO6391LanguageCode = languageData.iso6391.toUpperCase() as ISO6391LanguageCode;
-  const iso6392BCode: ISO6392BLanguageCode = languageData.iso6392B.toUpperCase() as ISO6392BLanguageCode;
-  const iso6392TCode: ISO6392TLanguageCode = languageData.iso6392T.toUpperCase() as ISO6392TLanguageCode;
-  const iso6393Code: ISO6393LanguageCode = languageData.iso6393.toUpperCase() as ISO6393LanguageCode;
+  const iso6391Code = languageData.iso6391 as ISO6391LanguageCode;
+  const iso6392BCode = languageData.iso6392B as ISO6392BLanguageCode;
+  const iso6392TCode = languageData.iso6392T as ISO6392TLanguageCode;
+  const iso6393Code = languageData.iso6393 as ISO6393LanguageCode;
 
   const language = new Language({
     iso6391Code,

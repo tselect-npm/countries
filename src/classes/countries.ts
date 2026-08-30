@@ -17,7 +17,7 @@ countriesData.forEach(countryData => {
     countries.set(code, new Country({
       code,
       currencies: (countryData.currencies as string[]).map(currencyCode => Currencies.get(currencyCode as CurrencyCode) as ICurrency),
-      languages: (countryData.languages as string[]).map(languageCode => Languages.getByISO6393Code(languageCode.toUpperCase() as ISO6393LanguageCode)),
+      languages: (countryData.languages as string[]).map(languageCode => Languages.getByISO6393Code(languageCode as ISO6393LanguageCode)),
       names: { [ISO6391LanguageCode.EN]: countryData.name },
       callingCodes: countryData.countryCallingCodes
     }));
