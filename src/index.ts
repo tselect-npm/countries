@@ -1,8 +1,8 @@
 export { Countries } from './classes/countries';
 export { Currencies } from './classes/currencies';
-export { ICountry } from './interfaces/country';
-export { ICurrency } from './interfaces/currency';
-export { ILanguage } from './interfaces/language';
+export type { ICountry } from './interfaces/country';
+export type { ICurrency } from './interfaces/currency';
+export type { ILanguage } from './interfaces/language';
 export { CountryCode } from './constants/country-code';
 export { CurrencyCode } from './constants/currency-code';
 export { ISO6391LanguageCode } from './constants/iso-6391-language-code';
